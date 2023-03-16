@@ -1,117 +1,79 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  font-family: "popins" sans-serif;
-  padding: 0;
+.features {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  /* background-color: #000; */
+}
+.features .container {
+  display: grid;
+  place-items: center;
+}
+.mySwiper {
+  position: relative;
+  width: 220px;
 }
 
-body {
-  background-color: #f0f2f5;
-  font-weight: 300;
+.swiper-slide {
+  width: 220px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #fff;
 }
-.features {
-    position: relative;
-  background-color: rgb(14, 4, 80);
+.swiper-slide img {
+  width: 220px;
 }
-.card-carousel {
+
+.swiper-slide:nth-child(1n) {
+  box-shadow: 0 0 20px #5ba8f8;
+  animation: shadow1 3s infinite;
+  /* box-shadow: 0 0 20px #90DD53; */
+}
+
+.swiper-slide:nth-child(2n) {
+  box-shadow: 0 0 20px #e8b43e;
+  /* box-shadow: 0 0 20px #E8B43E; */
+}
+
+.swiper-slide:nth-child(3n) {
+  box-shadow: 0 0 20px #765bbc;
+  /* box-shadow: 0 0 20px #ED6EB9; */
+}
+
+.swiper-slide:nth-child(4n) {
+  box-shadow: 0 0 20px #e86847;
+  /* box-shadow: 0 0 50px #E86847; */
+}
+.swipper-text {
   position: relative;
-  margin: 0 auto;
-  padding: 0;
-  max-width: 100%;
-  height: 100vh;
-  perspective: 2000px;
-  perspective-origin: top;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
 }
-.card-carousel .button-spin {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  border: none;
-  color: white;
-  cursor: pointer;
-  font-size: 20px;
-  background-color: #ffffff3b;
-  border-radius: 10px;
-  font-weight: 800;
-  opacity: 0.5;
-  padding: 10px 16px;
-  outline: none;
-}
-.card-carousel .button-spin:hover {
-  opacity: 1;
-}
-.card-carousel .button-spin.counterclockwise {
-  left: 0;
-}
-.card-carousel .button-spin.clockwise {
-  right: 0;
-}
-.card-carousel .inner-carousel {
-  position: relative;
-  margin: 0 auto;
-  top: 50px;
-  transform-style: preserve-3d;
-}
-.card-carousel .inner-carousel > div {
-  top: 50%;
-  position: absolute;
-  margin: 0 auto;
-  padding: 0;
-  opacity: 0.1;
-  overflow: hidden;
-  color: #000;
-  border-radius: 60px;
-  transition: all 0.5s ease-out;
-  z-index: 1;
-  box-shadow: 0px 10px 10px 10px rgba(0, 54, 90, 0.15);
-}
-.card-carousel .inner-carousel > div img {
-    min-width: 300px;
-}
-/* .card-carousel .inner-carousel > div:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
+.swipper-text p {
   width: 100%;
-  height: 100%;
-  border-radius: 10px;
-  opacity: 0.6;
-  background-color: #ddd;
-  z-index: 1;
-} */
-.card-carousel .inner-carousel > div.counterclockwise:after,
-.card-carousel .inner-carousel > div.clockwise:after {
-  opacity: 0.4;
-  cursor: pointer;
+  max-width: 500px;
+  text-align: center;
+  font-weight: 600;
+  line-height: 20px;
+  font-size: 12px;
+  transition: ease-in-out .5s;
+  background: linear-gradient(to right, #0077f7, #73ff00);
+
+  /* Set the background-clip property to text */
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+
+  /* Set the text-fill-color property to transparent */
+  color: transparent;
+  -webkit-text-fill-color: transparent;
 }
-.card-carousel .inner-carousel > div.front:after {
-  content: none;
-}
-.card-carousel .inner-carousel > div.front {
-  opacity: 1;
-}
-.features .text{
-   width: 100%;
-   left: 50%;
-   transform: translateX(-50%);
-    
-    text-align: center;
-    position: absolute;
-    background-color: rgb(14, 4, 80);
-}
-.features .text h1, .features .text h3, .features .text p{
-    color: #fff;
-    opacity: 1;
-}
-.features .text h1{
-    font-size: 24px;
-}
-.features .text h3{
-    font-size: 20px;
-}
-.features .text p{
-    font-size: 14px;
+.swipper-text p.abs {
+  position: absolute;
+  transform: scale(0);
 }

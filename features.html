@@ -54,8 +54,7 @@
     />
     <link
       rel="stylesheet"
-      href="dependencies/swiper/css/swiper.min.css"
-      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
     <link
       rel="stylesheet"
@@ -87,121 +86,68 @@
       href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800"
       rel="stylesheet"
     />
+    <style>
+      
+    </style>
   </head>
-
-  <body id="home-version-1" class="home-version-4" data-style="default">
-    <a href="#main_content" data-type="section-switch" class="return-to-top">
-      <i class="fa fa-chevron-up"></i>
-    </a>
-
-    <div class="page-loader">
-      <div class="loader">
-        <!-- Loader -->
-        <div class="blobs">
-          <div class="blob-center"></div>
-          <div class="blob"></div>
-          <div class="blob"></div>
-          <div class="blob"></div>
-          <div class="blob"></div>
-          <div class="blob"></div>
-          <div class="blob"></div>
-        </div>
-        <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
-          <defs>
-            <filter id="goo">
-              <feGaussianBlur
-                in="SourceGraphic"
-                stdDeviation="10"
-                result="blur"
+  <body>
+    <section class="features">
+      <div class="container">
+        <div class="mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                src="media/features/screenshot_2023-01-17_at_01.01.46_iphone13miniblue_portrait.png"
+                alt="feature"
               />
-              <feColorMatrix
-                in="blur"
-                values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 18
-                  -7"
-                result="goo"
-              />
-              <feBlend in="SourceGraphic" in2="goo" />
-            </filter>
-          </defs>
-        </svg>
-      </div>
-    </div>
-    <!-- /.page-loader -->
-
-    <div id="main_content">
-      <!--=========================-->
-      <!--=        Features         =-->
-      <!--=========================-->
-
-      <!--<pre id="debug1"></pre>
-<pre id="debug2"></pre>-->
-      <section class="features">
-        <div class="container">
-          <div class="card-carousel" id="debug_id_1">
-            <button class="button-spin counterclockwise">&lt;</button>
-            <div class="inner-carousel">
-              <div>
-                <img
-                  src="media/features/screenshot_2023-01-17_at_01.01.46_iphone13miniblue_portrait.png"
-                  alt="feature"
-                />
-              </div>
-              <div>
-                <img
-                  src="media/features/screenshot_2023-01-17_at_01.15.03_iphone13miniblue_portrait.png"
-                  alt="feature"
-                />
-              </div>
-              <div>
-                <img
-                  src="media/features/screenshot_2023-01-17_at_01.45.39_iphone13miniblue_portrait.png"
-                  alt="feature"
-                />
-              </div>
-              <div>
-                <img
-                  src="media/features/screenshot_2023-01-17_at_02.25.48_iphone13miniblue_portrait.png"
-                  alt="feature"
-                />
-              </div>
             </div>
-            <button class="button-spin clockwise">&gt;</button>
+            <div class="swiper-slide">
+              <img
+                src="media/features/screenshot_2023-01-17_at_01.15.03_iphone13miniblue_portrait.png"
+                alt="feature"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="media/features/screenshot_2023-01-17_at_01.45.39_iphone13miniblue_portrait.png"
+                alt="feature"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="media/features/screenshot_2023-01-17_at_02.25.48_iphone13miniblue_portrait.png"
+                alt="feature"
+              />
+            </div>
           </div>
         </div>
-        <div class="text">
-          <div class="container">
-            <p>
-              Find Your Tribe and Build a Community with Our Circle Feature!
-              Connect with Like-Minded People and Create a Space for Your
-              Interests Today!
-            </p>
-          </div>
+        <div class="swipper-text">
+          <p>
+            Find Your Tribe and Build a Community with Our Circle Feature!
+            Connect with Like-Minded People and Create a Space for Your
+            Interests Today!
+          </p>
+          <p class="abs">
+            Make Every Workplace Event Unforgettable: Our In-House Spaces Offer
+            Versatile and Unique Settings for Every Occasion. From the Cozy
+            Kitchen to the Chic Lounge, Our Locations Provide the Perfect
+            Ambiance and Functionality to Create a Memorable Experience.
+          </p>
+          <p class="abs">
+            From workshops to team-building, our fully equipped event space has
+            everything you need to create unforgettable experiences.
+          </p>
+          <p class="abs">
+            Collect Kuddos badges by attending events and participating in group
+            activities - the more you get, the closer you are to winning an
+            awesome prize from our company.
+          </p>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- /.site-features -->
-    </div>
-    <!-- /#site -->
-
-    <!-- Dependency Scripts -->
-    <script src="dependencies/jquery/jquery.min.js"></script>
-    <script src="dependencies/bootstrap/js/bootstrap.min.js"></script>
-    <script src="dependencies/swiper/js/swiper.min.js"></script>
-    <script src="dependencies/jquery.appear/jquery.appear.js"></script>
-    <script src="dependencies/wow/js/wow.min.js"></script>
-    <script src="dependencies/countUp.js/countUp.min.js"></script>
-    <script src="dependencies/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="dependencies/imagesloaded/imagesloaded.pkgd.min.js"></script>
-    <script src="dependencies/jquery.parallax-scroll/js/jquery.parallax-scroll.js"></script>
-    <script src="dependencies/magnific-popup/js/jquery.magnific-popup.min.js"></script>
-    <script src="dependencies/gmap3/js/gmap3.min.js"></script>
-    <script
-      type="text/javascript"
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDk2HrmqE4sWSei0XdKGbOMOHN3Mm2Bf-M&#038;ver=2.1.6"
-    ></script>
-    <!-- Site Scripts -->
-    <script src="assets/js/retina.min.js"></script>
-    <script src="assets/js/app.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="assets/js/feature.js"></script>
   </body>
 </html>
